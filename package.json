@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "stylelint-check": "stylelint-config-prettier-check",
+    "stylelint": "stylelint \"**/*.css\"",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@types/node": "18.15.3",
@@ -23,6 +26,13 @@
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.56.0",
-    "@typescript-eslint/parser": "^5.56.0"
+    "@typescript-eslint/parser": "^5.56.0",
+    "husky": "^8.0.0",
+    "stylelint": "^15.3.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-standard": "^31.0.0",
+    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-order": "^6.0.3",
+    "stylelint-order-config-standard": "^0.1.3"
   }
 }
