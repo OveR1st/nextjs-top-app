@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --max-width: 1100px;
   --border-radius: 12px;
   --font-mono: ui-monospace, menlo, monaco, 'Cascadia Mono', 'Segoe UI Mono',
@@ -64,7 +64,7 @@
     --card-rgb: 100, 100, 100;
     --card-border-rgb: 200, 200, 200;
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -77,16 +77,9 @@ body {
   overflow-x: hidden;
 
   max-width: 100vw;
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: var(--black);
+  background: #e5e5e5;
 }
 
 a {
@@ -95,8 +88,18 @@ a {
   color: inherit;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+} */
+
+:root {
+  --black: #3b434e;
+  --white: white;
+  --primary: #7653fc;
+  --red: #fc836d;
+  --green: #1dc37e;
+  --green-light: #1dc37e;
+  --font-family: 'Noto Sans KR', sans-serif;
 }
