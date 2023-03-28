@@ -2,7 +2,7 @@ import { HtagProps } from './Htag.props';
 import styles from './Htag.module.css';
 
 export const Htag: React.FC<HtagProps> = ({ tag, children }): JSX.Element => {
-  console.log('render ');
+  // console.log('render Htag');
 
   switch (tag) {
     case 'h1':
