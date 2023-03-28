@@ -8,7 +8,11 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Htag tag="h1">Текст</Htag>
-      <Button onClick={() => console.log('CLICK')} appearance="primary">
+      <Button
+        onClick={() => console.log('CLICK')}
+        appearance="primary"
+        className="customClass"
+      >
         Узнать подробнее
       </Button>
       <Button appearance="ghost">Читать отзывы</Button>
