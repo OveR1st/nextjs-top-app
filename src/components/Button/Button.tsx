@@ -1,13 +1,15 @@
+import React from 'react';
 import { ButtonProps } from './Button.props';
 import styles from './Button.module.css';
 import cn from 'classnames';
-import { HTMLProps } from 'react';
+import ArrowIcon from './arrowIcon.svg';
 
 export const Button: React.FC<ButtonProps> = ({
   appearance,
   children,
   onClick,
   className,
+  arrow = 'none',
   ...props
 }): JSX.Element => {
   //   console.log('render Button');
@@ -21,6 +23,15 @@ export const Button: React.FC<ButtonProps> = ({
       {...props}
     >
       {children}
+      {arrow !== 'none' && (
+        <span
+          className={cn(styles.arrow, {
+            [styles.down]: arrow === 'down',
+          })}
+        >
+          <ArrowIcon />
+        </span>
+      )}
     </button>
   );
 };

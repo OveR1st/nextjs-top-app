@@ -12,6 +12,7 @@ export interface ButtonProps
   > {
   children: ReactNode;
   appearance: 'primary' | 'ghost';
+  arrow?: 'right' | 'down';
 }
 // export interface ButtonProps extends HTMLProps<HTMLButtonElement> {
 //   children: ReactNode;

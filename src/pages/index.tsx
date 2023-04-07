@@ -1,21 +1,22 @@
 import Image from 'next/image';
-import { Inter } from 'next/font/google';
-import { Button, Htag } from '@/components';
 
-const inter = Inter({ subsets: ['latin'] });
+import { Button, Htag } from '@/components';
 
 export default function Home(): JSX.Element {
   return (
     <>
       <Htag tag="h1">Текст</Htag>
       <Button
+        arrow="down"
         onClick={() => console.log('CLICK')}
         appearance="primary"
         className="customClass"
       >
-        Узнать подробнее
+        Кнопка 1
       </Button>
-      <Button appearance="ghost">Читать отзывы</Button>
+      <Button appearance="ghost" arrow="right">
+        Кнопка 2
+      </Button>
     </>
   );
 }
