@@ -20,6 +20,9 @@ export default function App({ Component, pageProps }: AppProps): JSX.Element {
           rel="stylesheet"
         ></link>
       </Head> */}
+      <Head>
+        <title>My-top-app</title>
+      </Head>
       <Component {...pageProps} />
     </>
   );

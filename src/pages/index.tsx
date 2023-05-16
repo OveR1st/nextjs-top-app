@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import { Button, Htag } from '@/components';
+import { Button, Htag, PText } from '@/components';
 
 export default function Home(): JSX.Element {
   return (
@@ -17,6 +17,7 @@ export default function Home(): JSX.Element {
       <Button appearance="ghost" arrow="right">
         Кнопка 2
       </Button>
+      <PText size="l">ddd</PText>
     </>
   );
 }

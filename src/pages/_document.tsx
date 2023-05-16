@@ -16,8 +16,6 @@ export default function Document(): JSX.Element {
   return (
     <Html lang="en">
       <Head>
-        <title>My-top-app</title>
-
         <link key={1} rel="icon" href="/favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
